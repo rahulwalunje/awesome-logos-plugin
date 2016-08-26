@@ -1,0 +1,290 @@
+/* 
+* slider logos carousel 
+*/
+.wps-awesome-logo-slider {
+    position: relative;
+    top: 0px; 
+    left: 0px; 
+    max-width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+.wps-awesome-logo-slider .wps-logos-slide-wrapper {
+    cursor: move;
+    position: absolute; 
+    left: 0px; 
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.wps_logos_no_preview {
+    height: 40px;
+    width: 98%;
+    border: 1px solid #333;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 20px;
+}
+/* added for grayscale effect */
+.wps-awesome-logo-slider img.wps_desaturate { 
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%); 
+}
+
+/* hover efeect overlay */
+.wps-awesome-logo-slider .wps_logo_slide_item {
+    width:100%;
+    height:100%;
+}
+.wps-awesome-logo-slider .logos_overlay { 
+    z-index: 3;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    display: block; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(89, 195, 195, 0.6);
+    opacity: 0; 
+    -moz-transition: all 0.3s; 
+    -webkit-transition: all 0.3s; 
+    transition: all 0.3s;
+    box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    -webkit-backface-visibility: hidden; 
+    -moz-backface-visibility: hidden; 
+    -o-backface-visibility: hidden; 
+    backface-visibility: hidden; 
+    -webkit-transform: translate3d(0,0,0); 
+}
+.wps_logo_slide_item .logos_overlay {
+    background: rgba( 0, 0, 0, 0.6 );
+}
+.wps-awesome-logo-slider .meta { 
+    color: #ffffff;
+    position: absolute; 
+    opacity: 0; 
+    z-index: 4; 
+    top: 150;
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+    -moz-transition: all 0.3s; 
+    -webkit-transition: all 0.3s; 
+    transition: all 0.3s; 
+    box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    -webkit-backface-visibility: hidden; 
+    -moz-backface-visibility: hidden; 
+    -o-backface-visibility: hidden; 
+    backface-visibility: hidden; 
+    -webkit-transform: translate3d(0,0,0); 
+}
+.wps-awesome-logo-slider .wps_logo_slide_item h3{
+    display: block;
+    position: relative;
+    float: left;
+    z-index: 5;
+    width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+}
+.wps_logo_slide_item:hover span.logos_overlay, .wps_logo_slide_item:hover div.meta {
+    opacity:1;
+}
+/* Arrow Navigation Skins */
+.jssoral, .jssorar, .jssoraldn, .jssorardn {
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    overflow:hidden;
+}
+.jssora1l, .jssora1r, .jssora1ldn, .jssora1rdn {
+    background: url("../images/arow/a1.png") no-repeat;
+}
+.jssora2l, .jssora2r, .jssora2ldn, .jssora2rdn {
+    background: url("../images/arow/a2.png") no-repeat;
+}
+.jssora3l, .jssora3r, .jssora3ldn, .jssora3rdn {
+    background: url("../images/arow/a3.png") no-repeat;
+}
+.jssora4l, .jssora4r, .jssora4ldn, .jssora4rdn {
+    background: url("../images/arow/a4.png") no-repeat;
+}
+.jssora5l, .jssora5r, .jssora5ldn, .jssora5rdn {
+    background: url("../images/arow/a5.png") no-repeat;
+}
+.jssora6l, .jssora6r, .jssora6ldn, .jssora6rdn {
+    background: url("../images/arow/a6.png") no-repeat;
+}
+.jssora7l, .jssora7r, .jssora7ldn, .jssora7rdn {
+    background: url("../images/arow/a7.png") no-repeat;
+}
+.jssora8l, .jssora8r, .jssora8ldn, .jssora8rdn {
+    background: url("../images/arow/a8.png") no-repeat;
+}
+.jssora9l, .jssora9r, .jssora9ldn, .jssora9rdn {
+    background: url("../images/arow/a9.png") no-repeat;
+}
+.jssora10l, .jssora10r, .jssora10ldn, .jssora10rdn {
+    background: url("../images/arow/a10.png") no-repeat;
+}
+.jssora11l, .jssora11r, .jssora11ldn, .jssora11rdn {
+    background: url("../images/arow/a11.png") no-repeat;
+}
+.jssora12l, .jssora12r, .jssora12ldn, .jssora12rdn {
+    background: url("../images/arow/a12.png") no-repeat;
+}
+.jssora13l, .jssora13r, .jssora13ldn, .jssora13rdn {
+    background: url("../images/arow/a13.png") no-repeat;
+}
+.jssora14l, .jssora14r, .jssora14ldn, .jssora14rdn {
+    background: url("../images/arow/a14.png") no-repeat;
+}
+.jssora15l, .jssora15r, .jssora15ldn, .jssora15rdn {
+    background: url("../images/arow/a15.png") no-repeat;
+}
+.jssora16l, .jssora16r, .jssora16ldn, .jssora16rdn {
+    background: url("../images/arow/a16.png") no-repeat;
+}
+.jssora17l, .jssora17r, .jssora17ldn, .jssora17rdn {
+    background: url("../images/arow/a17.png") no-repeat;
+}
+.jssora18l, .jssora18r, .jssora18ldn, .jssora18rdn {
+    background: url("../images/arow/a18.png") no-repeat;
+}
+.jssora19l, .jssora19r, .jssora19ldn, .jssora19rdn {
+    background: url("../images/arow/a19.png") no-repeat;
+}
+.jssora20l, .jssora20r, .jssora20ldn, .jssora20rdn {
+    background: url("../images/arow/a20.png") no-repeat;
+}
+.jssora21l, .jssora21r, .jssora21ldn, .jssora21rdn {
+    background: url("../images/arow/a21.png") no-repeat;
+}
+.jssoral { background-position: -10px -35px; }
+.jssorar { background-position: -70px -35px; }
+.jssoral:hover { background-position: -130px -35px; }
+.jssorar:hover { background-position: -190px -35px; }
+.jssoraldn { background-position: -250px -35px; }
+.jssorardn { background-position: -310px -35px; }
+/* Ends Arrow Navigation */
+/* Bullet start */
+.logobl div, .logobl div:hover, .logobl .av {
+    overflow:hidden;
+    cursor: pointer;
+}
+.logosb1 div, .logosb1 div:hover, .logosb1 .av {
+    background: url("../images/nav/b1.png") no-repeat;
+}
+.logosb2 div, .logosb2 div:hover, .logosb2 .av {
+    background: url("../images/nav/b2.png") no-repeat;
+}
+.logosb3 div, .logosb3 div:hover, .logosb3 .av {
+    background: url("../images/nav/b3.png") no-repeat;
+}
+.logosb4 div, .logosb4 div:hover, .logosb4 .av {
+    background: url("../images/nav/b4.png") no-repeat;
+}
+.logosb5 div, .logosb5 div:hover, .logosb5 .av {
+    background: url("../images/nav/b5.png") no-repeat;
+}
+.logosb6 div, .logosb6 div:hover, .logosb6 .av {
+    background: url("../images/nav/b6.png") no-repeat;
+}
+.logosb7 div, .logosb7 div:hover, .logosb7 .av {
+    background: url("../images/nav/b7.png") no-repeat;
+}
+.logosb8 div, .logosb8 div:hover, .logosb8 .av {
+    background: url("../images/nav/b8.png") no-repeat;
+}
+.logosb9 div, .logosb9 div:hover, .logosb9 .av {
+    background: url("../images/nav/b9.png") no-repeat;
+}
+.logosb10 div, .logosb10 div:hover, .logosb10 .av {
+    background: url("../images/nav/b10.png") no-repeat;
+}
+.logosb11 div, .logosb11 div:hover, .logosb11 .av {
+    background: url("../images/nav/b11.png") no-repeat;
+}
+.logosb12 div, .logosb12 div:hover, .logosb12 .av {
+    background: url("../images/nav/b12.png") no-repeat;
+}
+.logosb13 div, .logosb13 div:hover, .logosb13 .av {
+    background: url("../images/nav/b13.png") no-repeat;
+}
+.logosb14 div, .logosb14 div:hover, .logosb14 .av {
+    background: url("../images/nav/b14.png") no-repeat;
+}
+.logosb15 div, .logosb15 div:hover, .logosb15 .av {
+    background: url("../images/nav/b15.png") no-repeat;
+}
+.logobl div { background-position: -6px -6px; }
+.logobl div:hover, .logobl .av:hover { background-position: -36px -6px; }
+.logobl .av { background-position: -66px -6px; }
+.logobl .dn, .logobl .dn:hover { background-position: -96px -6px; }
+/* Bullet ends*/
+
+/*CSS tooltip*/
+div.wps_tooltip {
+  position: relative;
+  display: inline;
+  color: #000000;
+  text-decoration: none;
+}
+div.wps_tooltip span {
+  position: absolute;
+  width: 133px;
+  color: #FFFFFF;
+  background: #4D4D4D;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  visibility: hidden;
+  border-radius: 6px;
+  border: 1px solid #4D4D4D;
+  text-shadow: 0px 0px 0px #000000;
+  color: #FFFFFF;
+}
+/* @enable tooltip arrow
+div.tooltip span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  width: 0; height: 0;
+  border-top: 8px solid #000000;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+} */
+div:hover.wps_tooltip span {
+  visibility: visible;
+  opacity: 1;
+  bottom: 50px;
+  left: 50%;
+  margin-left:-76px;
+  z-index: 999;
+}
+.logos-outshadow:hover {
+  -webkit-box-shadow: 0 0 15px #333333;
+  -moz-box-shadow: 0 0 15px #333333;
+  box-shadow: 0 0 15px #333333;
+}
+.logos-inshadow:hover {
+  -webkit-box-shadow: inset 0 0 15px #bcbcbc;
+  -moz-box-shadow: inset 0 0 15px #bcbcbc;
+  box-shadow: inset 0 0 15px #bcbcbc;
+}

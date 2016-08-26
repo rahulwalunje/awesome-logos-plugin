@@ -1,0 +1,182 @@
+/* 
+* simple and resposive grids
+*/
+.wps_logos_simple_grid .wps_logos_simple_grid_image {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+.wps_logos_simple_grid .wps_simple_grid_item {
+    float:left; 
+    margin: 0; 
+    height: 0px;
+    position: relative;
+    display: block;
+}
+.wps_logos_simple_grid .logos_overlay {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(89, 195, 195, 0.6);
+    opacity: 0;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+}
+.wps_logos_simple_grid_image:hover span.logos_overlay, .wps_logos_simple_grid_image:hover div.meta {
+    opacity:1;
+    top: 0;
+}
+.wps_logos_simple_grid.wps_logos_layout .wps_logos_simple_grid_image .logos_overlay {
+    background: rgba( 0, 0, 0, 0.6 ); 
+}
+/* construct for box shadow */
+.wps_logos_simple_grid .logos-outshadow:hover {
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-shadow: 0 0 15px #333333;
+    -moz-box-shadow: 0 0 15px #333333;
+    box-shadow: 0 0 15px #333333;
+}
+.wps_logos_simple_grid .logos-outshadow {
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.wps_logos_simple_grid .logos-inshadow:hover {
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    -webkit-box-shadow: inset 0 0 20px #bcbcbc;
+    -moz-box-shadow: inset 0 0 20px #bcbcbc;
+    box-shadow: inset 0 0 20px #bcbcbc;
+}
+.wps_logos_simple_grid .logos-inshadow {
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+/* added for grayscale effect */
+.wps_logos_simple_grid img.wps_desaturate { 
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%); 
+}
+/* Fullwidth Portfolio */
+.wps_logos_simple_grid .wps_logos_simple_grid_image img { 
+    width:100%;
+    box-sizing: border-box;
+    height: 100%; 
+    min-height: 100%; 
+    min-width: 100%; 
+}
+.wps_logos_simple_grid .wps_logos_simple_grid_image .logos_overlay:before { 
+    top: 40%;
+    -moz-transition: all 0.4s; 
+    -webkit-transition: all 0.4s; 
+    transition: all 0.4s;
+}
+.wps_logos_simple_grid .wps_logos_simple_grid_image:hover .logos_overlay:before { 
+    top: 33%; 
+}
+.wps_logos_simple_grid .wps_logos_simple_grid_image h3 {
+    color: #fff;
+    overflow: hidden;
+    position: relative; 
+    float: left; 
+    z-index: 5; 
+    width: 100%; 
+    text-align: center;
+    -moz-transition: all 0.3s; 
+    -webkit-transition: all 0.3s; 
+    transition: all 0.3s;
+    box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    -webkit-backface-visibility: hidden; 
+    -moz-backface-visibility: hidden; 
+    -o-backface-visibility: hidden; 
+    backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0); 
+}
+.wps_logos_simple_grid .wps_logos_simple_grid_image .meta { 
+    position: absolute; 
+    opacity: 0; 
+    z-index: 4;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+   -moz-transition: all 0.3s; 
+    -webkit-transition: all 0.3s; 
+    transition: all 0.3s;
+    box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    -webkit-backface-visibility: hidden; 
+    -moz-backface-visibility: hidden; 
+    -o-backface-visibility: hidden; 
+    backface-visibility: hidden; 
+    -webkit-transform: translate3d(0,0,0); 
+}
+.wps_logos_simple_grid .wps_logos_simple_grid_image h3 {
+    margin-top: 40%; 
+    padding: 0 5px;
+}
+.wps_logos_simple_grid .wps_logos_simple_grid_image:hover h3 {
+    margin-top: 35%;
+}
+/*CSS tooltip*/
+.wps_logos_simple_grid div.wps_tooltip {
+    position: relative;
+    display: inline;
+    color: #000000;
+    text-decoration: none;
+}
+.wps_logos_simple_grid div.wps_tooltip span{
+    position: absolute;
+    width: 133px;
+    color: #FFFFFF;
+    background: #4D4D4D;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    visibility: hidden;
+    border-radius: 6px;
+    border: 1px solid #4D4D4D;
+    text-shadow: 0px 0px 0px #000000;
+    color: #FFFFFF;
+}
+/* @enable tooltip arrow
+div.tooltip span:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    width: 0; height: 0;
+    border-top: 8px solid #000000;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+} */
+.wps_logos_simple_grid div:hover.wps_tooltip span {
+    visibility: visible;
+    opacity: 1;
+    bottom: 50px;
+    left: 52%;
+    margin-left:-76px;
+    z-index: 999;
+}
